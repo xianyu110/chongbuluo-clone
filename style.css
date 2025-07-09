@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap');
+
+body {
+    font-family: 'Noto Sans SC', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f9;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 240px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.logo h1 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #2c3e50;
+    text-align: center;
+}
+
+.menu {
+    flex-grow: 1;
+}
+
+.menu-group-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #888;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    text-transform: uppercase;
+}
+
+.menu-group:first-child .menu-group-title {
+    margin-top: 0;
+}
+
+.logo i {
+    margin-right: 10px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin-bottom: 10px;
+}
+
+.menu li a {
+    display: block;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.menu li a i {
+    margin-right: 15px;
+    width: 20px;
+    text-align: center;
+}
+
+.menu li.active a, .menu li a:hover {
+    background-color: #e8f0fe;
+    color: #1967d2;
+}
+
+/* Main Content Styles */
+.main-content {
+    flex-grow: 1;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.search-container {
+    display: flex;
+    flex-grow: 1;
+    max-width: 600px;
+}
+
+.search-box {
+    width: 100%;
+    padding: 12px 20px;
+    border: 2px solid #dfe1e5;
+    border-radius: 24px 0 0 24px;
+    outline: none;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.search-box:focus {
+    border-color: #1967d2;
+    box-shadow: 0 0 5px rgba(25, 103, 210, 0.2);
+}
+
+.search-button {
+    padding: 0 20px;
+    border: 2px solid #dfe1e5;
+    border-left: none;
+    background-color: #f8f9fa;
+    border-radius: 0 24px 24px 0;
+    cursor: pointer;
+    font-size: 16px;
+    color: #5f6368;
+}
+
+.search-button:hover {
+    background-color: #f1f3f4;
+}
+
+.user-menu a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #5f6368;
+    font-weight: 500;
+}
+
+/* Content Section Styles */
+.content {
+    flex-grow: 1;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    display: flex;
+}
+
+#content-frame {
+    flex-grow: 1;
+    border: none;
+    border-radius: 8px;
+}
+
+.doodle {
+    text-align: center;
+    color: #777;
+} 

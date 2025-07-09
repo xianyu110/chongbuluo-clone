@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>虫部落 - 快搜</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <h1><i class="fas fa-bug"></i> 虫部落</h1>
+            </div>
+            <nav class="menu">
+                <div class="menu-group">
+                    <h3 class="menu-group-title">常用搜索</h3>
+                    <ul>
+                        <li class="active" data-search-url="https://www.google.com/search?q=" data-home-url="https://www.google.com/webhp?igu=1"><a href="#"><i class="fab fa-google"></i> Google</a></li>
+                        <li data-search-url="https://www.baidu.com/s?wd=" data-home-url="https://www.baidu.com"><a href="#"><i class="fab fa-baidu"></i> 百度</a></li>
+                        <li data-search-url="https://www.bing.com/search?q=" data-home-url="https://www.bing.com"><a href="#"><i class="fab fa-microsoft"></i> Bing</a></li>
+                        <li data-search-url="" data-home-url="https://www.google.com/advanced_search"><a href="#"><i class="fab fa-google"></i> 谷歌高级</a></li>
+                        <li data-search-url="" data-home-url="https://www.baidu.com/gaojisousuo/"><a href="#"><i class="fab fa-baidu"></i> 百度高级</a></li>
+                        <li data-search-url="" data-home-url="https://www.sogou.com/advanced/advanced.html"><a href="#"><i class="fas fa-search-plus"></i> 搜狗高级</a></li>
+                        <li data-search-url="https://en.wikipedia.org/w/index.php?search=" data-home-url="https://www.wikipedia.org/"><a href="#"><i class="fab fa-wikipedia-w"></i> Wikipedia</a></li>
+                        <li data-search-url="https://www.google.com/search?tbm=isch&q=" data-home-url="https://images.google.com/"><a href="#"><i class="fas fa-image"></i> 以图搜图</a></li>
+                    </ul>
+                </div>
+                <div class="menu-group">
+                    <h3 class="menu-group-title">AI 助手</h3>
+                    <ul>
+                        <li data-search-url="" data-home-url="https://chat.openai.com/"><a href="#"><i class="fas fa-robot"></i> ChatGPT</a></li>
+                        <li data-search-url="" data-home-url="https://kimi.ai/"><a href="#"><i class="fas fa-feather-alt"></i> Kimi</a></li>
+                        <li data-search-url="" data-home-url="https://www.doubao.com/"><a href="#"><i class="fas fa-coins"></i> 豆包</a></li>
+                        <li data-search-url="https://www.perplexity.ai/search?q=" data-home-url="https://www.perplexity.ai/"><a href="#"><i class="fas fa-question-circle"></i> Perplexity</a></li>
+                        <li data-search-url="https://metaso.cn/search?q=" data-home-url="https://metaso.cn/"><a href="#"><i class="fas fa-search"></i> 秘塔</a></li>
+                    </ul>
+                </div>
+                <div class="menu-group">
+                    <h3 class="menu-group-title">社区媒体</h3>
+                    <ul>
+                        <li data-search-url="https://www.xiaohongshu.com/search_result?keyword=" data-home-url="https://www.xiaohongshu.com"><a href="#"><i class="fas fa-book-reader"></i> 小红书</a></li>
+                        <li data-search-url="https://s.weibo.com/weibo/" data-home-url="https://weibo.com/"><a href="#"><i class="fab fa-weibo"></i> 微博</a></li>
+                        <li data-search-url="https://weixin.sogou.com/weixin?type=2&query=" data-home-url="https://weixin.sogou.com/"><a href="#"><i class="fab fa-weixin"></i> 搜狗微信</a></li>
+                        <li data-search-url="https://zhihu.sogou.com/zhihu?query=" data-home-url="https://www.zhihu.com/"><a href="#"><i class="fab fa-zhihu"></i> 搜狗知乎</a></li>
+                        <li data-search-url="https://www.douban.com/search?q=" data-home-url="https://www.douban.com/"><a href="#"><i class="fas fa-film"></i> 豆瓣</a></li>
+                        <li data-search-url="https://search.bilibili.com/all?keyword=" data-home-url="https://www.bilibili.com/"><a href="#"><i class="fas fa-tv"></i> 哔哩哔哩</a></li>
+                    </ul>
+                </div>
+                <div class="menu-group">
+                    <h3 class="menu-group-title">资源搜索</h3>
+                    <ul>
+                        <li data-search-url="https://music.163.com/#/search/m/?s=" data-home-url="https://music.163.com/"><a href="#"><i class="fas fa-music"></i> 音乐</a></li>
+                        <li data-search-url="https://ditu.amap.com/search?query=" data-home-url="https://ditu.amap.com/"><a href="#"><i class="fas fa-map-marker-alt"></i> 地图</a></li>
+                        <li data-search-url="https://www.pansou.com/s/s.php?q=" data-home-url="https://www.pansou.com/"><a href="#"><i class="fas fa-database"></i> 盘搜Pro</a></li>
+                        <li data-search-url="https://www.dalipan.com/search?keyword=" data-home-url="https://www.dalipan.com/"><a href="#"><i class="fas fa-cloud"></i> 混合盘搜</a></li>
+                        <li data-search-url="https://www.yiso.fun/search?searchword=" data-home-url="https://www.yiso.fun/"><a href="#"><i class="fas fa-cloud-upload-alt"></i> 云盘搜索</a></li>
+                        <li data-search-url="" data-home-url="https://www.jiumodiary.com/"><a href="#"><i class="fas fa-book-open"></i> 电子书</a></li>
+                        <li data-search-url="https://www.agemys.org/search?query=" data-home-url="https://www.agemys.org/"><a href="#"><i class="fas fa-tv"></i> 搜动漫</a></li>
+                        <li data-search-url="" data-home-url="https://github.com/iptv-org/iptv"><a href="#"><i class="fas fa-satellite-dish"></i> IPTV源</a></li>
+                        <li data-search-url="http://www.zhaogepu.com/search/?q=" data-home-url="http://www.zhaogepu.com/"><a href="#"><i class="fas fa-file-audio"></i> 找歌谱</a></li>
+                        <li data-search-url="" data-home-url="https://www.quodb.com/"><a href="#"><i class="fas fa-closed-captioning"></i> 字幕反向</a></li>
+                    </ul>
+                </div>
+                <div class="menu-group">
+                    <h3 class="menu-group-title">专业工具</h3>
+                    <ul>
+                        <li data-search-url="https://github.com/search?q=" data-home-url="https://github.com/"><a href="#"><i class="fab fa-github"></i> GitHub</a></li>
+                        <li data-search-url="https://sourceforge.net/directory/?q=" data-home-url="https://sourceforge.net/"><a href="#"><i class="fas fa-code-branch"></i> 开源代码</a></li>
+                        <li data-search-url="https://www.wolframalpha.com/input?i=" data-home-url="https://www.wolframalpha.com/"><a href="#"><i class="fas fa-calculator"></i> WolframAlpha</a></li>
+                        <li data-search-url="https://www.zdic.net/hans/" data-home-url="https://www.zdic.net/"><a href="#"><i class="fas fa-font"></i> 汉典</a></li>
+                        <li data-search-url="" data-home-url="https://www.pkulaw.com/"><a href="#"><i class="fas fa-gavel"></i> 法律法规</a></li>
+                        <li data-search-url="https://www.qcc.com/search?key=" data-home-url="https://www.qcc.com/"><a href="#"><i class="fas fa-building"></i> 查企业</a></li>
+                        <li data-search-url="https://www.similarsites.com/site/" data-home-url="https://www.similarsites.com/"><a href="#"><i class="fas fa-clone"></i> SimilarSites</a></li>
+                        <li data-search-url="" data-home-url="https://www.kuaidi100.com/"><a href="#"><i class="fas fa-truck"></i> 快递</a></li>
+                        <li data-search-url="https://emojipedia.org/search/?q=" data-home-url="https://emojipedia.org/"><a href="#"><i class="fas fa-smile"></i> SearchEmoji</a></li>
+                        <li data-search-url="https://www.stickpng.com/search?q=" data-home-url="https://www.stickpng.com/"><a href="#"><i class="fas fa-vector-square"></i> 矢量 logo</a></li>
+                        <li data-search-url="" data-home-url="https://www.likefont.com/"><a href="#"><i class="fas fa-font"></i> 字体识别</a></li>
+                        <li data-search-url="https://visualhunt.com/search/instant/?q=" data-home-url="https://visualhunt.com/"><a href="#"><i class="fas fa-camera-retro"></i> Visual Hunt</a></li>
+                        <li data-search-url="https://wiki.mbalib.com/wiki/Special:Search?search=" data-home-url="https://www.mbalib.com/"><a href="#"><i class="fas fa-brain"></i> MBA智库</a></li>
+                        <li data-search-url="" data-home-url="http://www.iplant.cn/"><a href="#"><i class="fas fa-leaf"></i> 植物物种</a></li>
+                        <li data-search-url="https://www.patents.com/search#q=" data-home-url="https://www.patents.com/"><a href="#"><i class="fas fa-file-signature"></i> 专利检索</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header class="header">
+                <div class="search-container">
+                    <input type="text" id="search-input" class="search-box" placeholder="输入并搜索...">
+                    <button id="search-button" class="search-button"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="user-menu">
+                    <a href="#">设置</a>
+                    <a href="#">皮肤</a>
+                </div>
+            </header>
+            <section class="content">
+                <iframe id="content-frame" name="content-frame" src=""></iframe>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
