@@ -56,20 +56,4 @@ document.addEventListener('DOMContentLoaded', () => {
             performSearch();
         }
     });
-
-    /* 访问统计 */
-    const countSpan = document.getElementById('visitor-count');
-    if (countSpan) {
-        const pageId = 'xianyu110.github.io.chongbuluo-clone';
-        const apiUrl = `https://hittly.io/count/get?id=${pageId}`;
-
-        fetch(apiUrl)
-            .then(res => res.json())
-            .then(data => {
-                countSpan.textContent = data.value;
-            })
-            .catch(() => {
-                countSpan.textContent = '无法获取';
-            });
-    }
 }); 
