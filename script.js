@@ -56,4 +56,43 @@ document.addEventListener('DOMContentLoaded', () => {
             performSearch();
         }
     });
+
+    /* 访问统计 */
+    const countSpan = document.getElementById('visitor-count');
+    if (countSpan) {
+        const COUNTER_KEY = 'xianyu110-chongbuluo-clone-visited';
+        const updateUrl = 'https://api.countapi.xyz/hit/xianyu110/chongbuluo-clone';
+        const getUrl = 'https://api.countapi.xyz/get/xianyu110/chongbuluo-clone';
+
+        const updateCount = () => {
+            fetch(updateUrl)
+                .then(res => res.json())
+                .then(data => {
+                    countSpan.textContent = data.value;
+                })
+                .catch(() => {
+                    countSpan.textContent = 'N/A';
+                });
+        };
+
+        const getCount = () => {
+            fetch(getUrl)
+                .then(res => res.json())
+                .then(data => {
+                    countSpan.textContent = data.value;
+                })
+                .catch(() => {
+                    countSpan.textContent = 'N/A';
+                });
+        };
+
+        if (!localStorage.getItem(COUNTER_KEY)) {
+            // 首次访问：计数并存储标记
+            updateCount();
+            localStorage.setItem(COUNTER_KEY, 'true');
+        } else {
+            // 非首次：仅获取当前计数
+            getCount();
+        }
+    }
 }); 

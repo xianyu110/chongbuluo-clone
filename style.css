@@ -162,4 +162,11 @@ body {
 .doodle {
     text-align: center;
     color: #777;
+}
+
+.footer {
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+    padding: 15px 0;
 } 
